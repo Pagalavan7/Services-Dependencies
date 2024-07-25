@@ -1,0 +1,14 @@
+<div class="header-container">
+  <div class="header-logo rounded-pill">WatchTub</div>
+  <div class="header-nav">
+    <a class="btn" href="#" (click)="HomeClicked()">HOME</a>
+    <a class="btn" href="#" (click)="AdminClicked()">ADMIN</a>
+    <button class="btn subscribe-button" (click)="onSubscribe()">
+      SUBSCRIBE
+    </button>
+  </div>
+</div>
+<div class="app-body" [ngSwitch]="selectedTab">
+  <app-home *ngSwitchCase="'home'"></app-home>
+  <app-admin *ngSwitchCase="'admin'"></app-admin>
+</div>

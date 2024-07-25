@@ -1,0 +1,28 @@
+.line {
+  background: #0c1844;
+  border: 2px solid #0c1844;
+  opacity: 1;
+}
+button {
+  color: #fff5e1;
+  background-color: #ff6969;
+}
+button:hover {
+  background-color: #c80036;
+}
+input.custom-height {
+  border: 2px solid #ff6969;
+  height: 40px; /* Set the desired height */
+  background-color: #fff5e1;
+  padding-left: 10px;
+}
+select.custom-select {
+  border: 2px solid #ff6969;
+  padding-left: 10px;
+  height: 40px;
+  background-color: #fff5e1; /* Set the height of the select element */
+}
+
+select.custom-select option {
+  height: 30px; /* Set the height of each option */
+}

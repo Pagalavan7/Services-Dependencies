@@ -1,0 +1,48 @@
+<div class="admin-container w-50 m-auto text-center">
+  <div class="admin-add-user mb-4">
+    <div class="row mb-2">
+      <div class="col-6">
+        <input
+          class="w-100 custom-height"
+          type="text"
+          placeholder="User Name"
+          [(ngModel)]="name"
+        />
+      </div>
+      <div class="col-6">
+        <select class="w-100 custom-select" name="gender" [(ngModel)]="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-6">
+        <select
+          class="w-100 custom-select"
+          name="subscriptionType"
+          [(ngModel)]="subType"
+        >
+          <option value="Monthly">Monthly</option>
+          <option value="Quaterly">Quaterly</option>
+          <option value="Yearly">Yearly</option>
+        </select>
+      </div>
+      <div class="col-6">
+        <select class="w-100 custom-select" name="active" [(ngModel)]="status">
+          <option value="Active">Active</option>
+          <option value="Inactive">Inactive</option>
+        </select>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-12">
+        <button class="btn w-100" (click)="onClick()">CREATE</button>
+      </div>
+    </div>
+  </div>
+  <hr class="line mt-3" />
+  <app-user-list></app-user-list>
+  <app-user-detail></app-user-detail>
+</div>

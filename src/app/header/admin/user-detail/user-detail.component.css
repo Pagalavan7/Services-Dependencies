@@ -1,0 +1,15 @@
+hr {
+  background: #0c1844;
+  border: 2px solid #0c1844;
+  opacity: 1;
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+.card {
+  background-color: #fff5e1;
+}
+.user-detail-info p {
+  text-align: left;
+}
